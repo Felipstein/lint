@@ -161,6 +161,44 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.51.0.tgz#6d419c240cfb2b66da37df230f7e7eef801c32fa"
   integrity sha512-HxjQ8Qn+4SI3/AFv6sOrDB+g6PpUTDwSJiQqOrnneEk8L71161srI9gjzzZvYVbzHiVg/BvcH95+cK/zfIt4pg==
 
+"@felipstein/eslint-config-base@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@felipstein/eslint-config-base/-/eslint-config-base-1.1.1.tgz#b17665f341b95d79cd9c1a8cfd75207a38c6f216"
+  integrity sha512-G1qpyOell8nIF6/mXOWC1FApgUZwqm/q923Cr+ocdZkUqEzkjCJ7SxFbOyJ+7C8cX09ePQxOVWdnUxVAlPhg8A==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^6.7.5"
+    "@typescript-eslint/parser" "^6.7.5"
+    eslint "^7.32.0 || ^8.2.0"
+    eslint-config-prettier "^9.0.0"
+    eslint-import-resolver-typescript "^3.6.1"
+    eslint-plugin-import "^2.25.2"
+    eslint-plugin-prettier "^5.0.1"
+    prettier "^3.0.3"
+    typescript "^5.2.2"
+
+"@felipstein/eslint-config-node@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@felipstein/eslint-config-node/-/eslint-config-node-1.1.1.tgz#9a9d88f0b76d0929f07152975fc00a836df47641"
+  integrity sha512-nT4+EWaGC0joT+WKvl3K4P2q0y3ZXasESkfQyA2CX8W8sVTdTktW9r320xIXcURuU+xm1trjpHIxq228VQxUew==
+  dependencies:
+    "@felipstein/eslint-config-base" "^1.1.1"
+    eslint "^7.32.0 || ^8.2.0"
+    eslint-config-airbnb-base "^15.0.0"
+    eslint-plugin-import "^2.25.2"
+
+"@felipstein/eslint-config-react@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@felipstein/eslint-config-react/-/eslint-config-react-1.1.1.tgz#80c4774a29547639173b5a9dd408a3970fc5a107"
+  integrity sha512-EvmXZMVzVXUpmkFcxFJkaEIaIkZDLB8Wufth9hjstXb1cEPIYBCMkBP5JC0GhBIBP6Y8QX+Ws+2mSEfxvTSFmA==
+  dependencies:
+    "@felipstein/eslint-config-base" "^1.1.1"
+    eslint "^7.32.0 || ^8.2.0"
+    eslint-config-airbnb "^19.0.4"
+    eslint-plugin-import "^2.25.3"
+    eslint-plugin-jsx-a11y "^6.5.1"
+    eslint-plugin-react "^7.28.0"
+    eslint-plugin-react-hooks "^4.3.0"
+
 "@humanwhocodes/config-array@^0.11.11":
   version "0.11.11"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.11.tgz#88a04c570dbbc7dd943e4712429c3df09bc32844"
