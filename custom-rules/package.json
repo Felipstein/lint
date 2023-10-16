@@ -1,7 +1,7 @@
 {
   "name": "@felipstein/eslint-plugin",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "eslint-plugin-custom-rules.cjs",
   "license": "MIT",
   "dependencies": {
     "eslint": "^8.51.0"
