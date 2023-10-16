@@ -1,0 +1,87 @@
+{
+  "env": {
+    "es2021": true
+  },
+  "extends": "prettier",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "rules": {
+    // throw prettier errors
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "printWidth": 120
+    }],
+
+    // allow empty catch
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+
+    // enable unnecessary constructor
+    "no-useless-constructor": "off",
+
+    // disallow empty functions, except for constructors, methods and async methods
+    "no-empty-function": [
+      "error",
+      {
+        "allow": ["constructors", "methods", "asyncMethods"]
+      }
+    ],
+
+    // prevent console.log
+    "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
+
+    // disable max-len rule, because prettier rule fix it
+    "max-len": "off",
+
+    // disable rule "Missing file extension "tsx" and "ts" for "./App""
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+
+    // keep imports in order
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "type", "object"],
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "newlines-between": "always"
+      }
+    ],
+
+    // enable named exports
+    "import/prefer-default-export": "off",
+
+    // prohibits using interfaces without the I prefix
+    // Honestly, I don't like it. I only use the I prefix when declaring a strong contract, like a repository.
+    // "@typescript-eslint/naming-convention": [
+    //   "error",
+    //   {
+    //     "selector": "interface",
+    //     "format": ["PascalCase"],
+    //     "custom": {
+    //       "regex": "^I[A-Z]",
+    //       "match": true
+    //     }
+    //   }
+    // ],
+
+    "custom-rules/iadawkodk": "error"
+  }
+}

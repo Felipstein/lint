@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react-hooks/recommended",
+    "@felipstein/eslint-config-base"
+  ],
+  "rules": {
+    // enable jsx syntax in .tsx files
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+
+    // disable React import requirement on jsx files
+    "react/react-in-jsx-scope": "off",
+
+    // allow spread jsx props
+    "react/jsx-props-no-spreading": "off",
+
+    // allow provide functions without useCallback in component props
+    "react/jsx-no-bind": "off"
+  }
+}
