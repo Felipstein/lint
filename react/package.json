@@ -1,10 +1,10 @@
 {
   "name": "@felipstein/eslint-config-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": ".eslintrc.json",
   "license": "MIT",
   "dependencies": {
-    "@felipstein/eslint-config-base": "^1.0.0",
+    "@felipstein/eslint-config-base": "^1.1.1",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.3",
