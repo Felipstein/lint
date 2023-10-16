@@ -11,7 +11,8 @@
   "plugins": [
     "@typescript-eslint",
     "import",
-    "prettier"
+    "prettier",
+    "@felipstein"
   ],
   "settings": {
     "import/resolver": {
@@ -66,10 +67,11 @@
     ],
 
     // enable named exports
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
 
     // prohibits using interfaces without the I prefix
     // Honestly, I don't like it. I only use the I prefix when declaring a strong contract, like a repository.
+    // see @felipstein/interface-prefix (below)
     // "@typescript-eslint/naming-convention": [
     //   "error",
     //   {
@@ -81,5 +83,7 @@
     //     }
     //   }
     // ],
+
+    "@felipstein/interface-prefix": "error"
   }
 }

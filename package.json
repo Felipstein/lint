@@ -2,9 +2,6 @@
   "name": "eslint-config",
   "version": "1.0.0",
   "license": "MIT",
-  "scripts": {
-    "update": "cd base && npm version patch && npm publish --access public && cd ../ && cd node && yarn add @felipstein/eslint-config-base@latest && npm version patch && npm publish --access public && cd ../ && cd react && yarn add @felipstein/eslint-config-react@latest && npm version patch && npm publish --access public && cd ../"
-  },
   "workspaces": [
     "apps-test/*"
   ],
