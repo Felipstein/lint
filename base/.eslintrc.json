@@ -46,7 +46,7 @@
     // disable max-len rule, because prettier rule fix it
     "max-len": "off",
 
-    // disable rule "Missing file extension "tsx" and "ts" for "./App""
+    // disable error about requirement to specify .ts and .tsx extension in TypeScript file imports
     "import/extensions": [
       "error",
       "ignorePackages",
