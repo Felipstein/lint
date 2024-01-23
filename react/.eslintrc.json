@@ -18,6 +18,8 @@
     "react/jsx-props-no-spreading": "off",
 
     // allow provide functions without useCallback in component props
-    "react/jsx-no-bind": "off"
+    "react/jsx-no-bind": "off",
+
+    "react/require-default-props": "off"
   }
 }

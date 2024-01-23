@@ -20,10 +20,12 @@
     }
   },
   "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+
     // throw prettier errors
     "prettier/prettier": ["error", {
       "singleQuote": true,
-      "printWidth": 120
+      "printWidth": 80
     }],
 
     // allow empty catch
@@ -43,18 +45,29 @@
     // prevent console.log
     "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
 
+    "no-unused-vars": "off",
+
+    "no-shadow": "off",
+
+    "class-methods-use-this": "off",
+
+    "no-underscore-dangle": "off",
+
+    "no-promise-executor-return": "off",
+
     // disable max-len rule, because prettier rule fix it
     "max-len": "off",
 
     // disable rule "Missing file extension "tsx" and "ts" for "./App""
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never",
-        "tsx": "never"
-      }
-    ],
+    // "import/extensions": [
+    //   "error",
+    //   "ignorePackages",
+    //   {
+    //     "ts": "never",
+    //     "tsx": "never"
+    //   }
+    // ],
+    "import/extensions": "off",
 
     // keep imports in order
     "import/order": [
@@ -83,6 +96,10 @@
     //     }
     //   }
     // ],
+
+    "import/no-extraneous-dependencies": "off",
+
+    "import/no-unresolved": "off",
 
     "@felipstein/interface-prefix": "error"
   }
