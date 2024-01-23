@@ -1,6 +1,6 @@
 {
   "name": "@felipstein/eslint-config-react",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "main": ".eslintrc.json",
   "license": "MIT",
   "dependencies": {
